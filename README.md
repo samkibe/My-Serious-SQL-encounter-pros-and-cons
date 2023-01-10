@@ -18,6 +18,7 @@ DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 Then did some tests 
 
 Wrong - DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Virtual-Machine-Platform
+
 Wrong - Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Virtual-Machine-Platform
 SOLVED ERROR : “enable the Virtual Machine Platform optional feature.”
 SOLUTION : (dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart)
