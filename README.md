@@ -15,10 +15,15 @@ For Virtual Machine Platform
 Error: Can't enable"Virtual Machine Platform" on windows features
 DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
-Then test
+Then did some tests 
+
 Wrong - DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Virtual-Machine-Platform
 Wrong - Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Virtual-Machine-Platform
 SOLVED ERROR : “enable the Virtual Machine Platform optional feature.”
 SOLUTION : (dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart)
+
+When it came to installing ubuntu, well, my Microsoft store was missing, however after some intensive research I came across a life hack, 
+SOLVED: If you are missing Microsoft store on your pc first download Xbox APP, and at the bottom of the environment they prompt a user to install Microsoft store and tadaa!!!
+
 
 
