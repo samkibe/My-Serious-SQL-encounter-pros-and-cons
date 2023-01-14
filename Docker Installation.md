@@ -1,4 +1,4 @@
-# My-Serious-SQL-encounter-pros-and-cos
+# Docker-Installation
 The first problem I encountered was at docker installation process while manually turning Windows features on and off, first of all my windows and user folders had the compressed double blue icon on the right, which I thought was the main problem however after many effortless googling I realized most window users had same problem. So, it was not the problem!
 
 Window features: Virtual Machine Platform and Windows Subsystem for Linux
