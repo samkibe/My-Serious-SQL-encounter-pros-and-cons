@@ -1,5 +1,6 @@
 #SQL Environment
--Will consit of two Docker containerS, a database to hold projects's Data, and a Graphical user interface to write and run sql queries (SQLPad)
+
+Will consit of two Docker containerS, a database to hold projects's Data, and a Graphical user interface to write and run sql queries (SQLPad)
 
 commands
 - docker-compose up - on terminal to create db and still access the docker container
