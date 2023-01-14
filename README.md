@@ -1,5 +1,5 @@
 # SERIOUS SQL
-Serious SQL as Danny the modulator calls, it is an extensive course to build SQL projects and portfolio to showcase strengths in Data exploration using SQL,
+Serious SQL as Danny the modulator calls it, is an extensive and advanced course on SQL - to build SQL projects and A portfolio to showcase strengths in Data exploration using SQL,
 as a Data analyst.
 
 
