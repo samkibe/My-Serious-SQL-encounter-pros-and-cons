@@ -26,7 +26,7 @@
 - LIMIT 5;
 
 # Cool example of SORT & LIMIT
-#### what are the 5 lowest total-sales values in the sales_by_film_category table 
+#### What are the 5 lowest total-sales values in the sales_by_film_category table?
 - SELECT total_sales
 - FROM dvd-rentals.sales_by_film_category
 - ORDER BY 1 (for 5 highest we might want to include DESC after 1, my view)
