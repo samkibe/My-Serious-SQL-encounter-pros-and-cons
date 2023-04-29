@@ -1,4 +1,4 @@
-## A row is a horizontal alignment of data, while a column is vertical.
+#### A row is a horizontal alignment of data, while a column is vertical.
 # SELECT STATEMENTS
 1. ### SELECT
 - col_name, (commas are very important)
