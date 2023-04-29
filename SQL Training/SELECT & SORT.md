@@ -17,7 +17,7 @@
 
 # SORTING TEXT COLUMN
 4. ### ORDER BY
-- When sorting we, basically use order by at default which gives results or output in alphabetical order.
+- When sorting we basically use 'order by' at default, whose results or output is in ascending alphabetical order.
 
 ## example query with all above intergrated 📧
 - SELECT country
