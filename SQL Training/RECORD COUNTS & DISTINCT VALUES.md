@@ -13,4 +13,7 @@ FROM schema_name.table_name
 - FROM dvd_rentals.film_list (removes diplucates)
 
 ### GROUP BY COUNT
-- IF QUESTION asks frequency it is asking for the COUNT
+- IF QUESTION asks frequency it is asking for the COUNT, does not check for null
+- Most important thing to note, for 'group by' only 1 row of each group is returned
+
+### 'GROUP BY' EXAMPLE 
