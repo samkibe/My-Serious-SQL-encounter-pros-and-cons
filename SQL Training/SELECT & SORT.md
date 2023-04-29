@@ -1,5 +1,5 @@
 # SELECT STATEMENTS
-### SELECT
+1. ### SELECT
 - col_name, (commas are very important)
 - col_name
 
@@ -8,14 +8,15 @@
 ##### incase we want a particular or specific item on a table we use the item ID
 - item_id
 
-### FROM schema_name.table_name; (and the semi colon always tellS the system where the query ends)
-schema.name identifies the schema then (.) table in that schema in a case where there is multiple schemas or in a broad DB.
+2. ### FROM 
+- schema_name.table_name; (the semi colon and the end of the query helps the system to know where the query ends)
+- schema.name identifies the schema then (.) table in that schema in a case where there is multiple schemas or in a broad DB.
 
-### LIMIT X; 
+3. ### LIMIT X; 
 - IF WE DO NOT KNOW THE AMOUNT OF THE DATA OR COLUMNS WE USE LIMIT SO THAT NOT TO CRASH THE SYSTEM. It's the best practise to always use a limit.
 
 # SORTING TEXT COLUMN
-### ORDER BY
+4. ### ORDER BY
 - When sorting we, basically use order by at default which gives results or output in alphabetical order.
 
 ## exmaple query with all above intergrated 📧
