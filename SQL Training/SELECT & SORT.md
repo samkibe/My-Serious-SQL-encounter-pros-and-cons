@@ -34,3 +34,10 @@
 - ORDER BY 1   (for 5 highest we might want to include DESC after 1, my view)
 - OR 'order by' or as from a particular column i.e total_sales
 - LIMIT 5;
+
+#### Interchanging 'sort by' 2 columns ascending or descending
+- SELECT *
+- FROM sample_table
+- ORDER BY column_a, column_b DESC
+- either use DESC on ether or both columns to work around inputs coming in, BECAUSE AT DEFAULT THE OTHER COLUMN WILL show in ascending order automatically
+
