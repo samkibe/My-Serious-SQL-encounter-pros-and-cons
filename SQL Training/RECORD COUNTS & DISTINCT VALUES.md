@@ -1,8 +1,8 @@
-#### HOW many records(rows)?
+### HOW many records(rows)?
 
 #### example How many rows are there in the row_name? i.e
 - SELECT 
-- COUNT (*) AS row_count some use COUNT (1) <- slower
+- COUNT (*) AS row_count  ( some use COUNT (1) ) but it is slower
 FROM schema_name.table_name
 
 ### UNIQUE COMLUMN VALUES
