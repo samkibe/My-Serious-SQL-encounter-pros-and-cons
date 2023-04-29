@@ -1,4 +1,4 @@
-### HOW many records(rows)?
+### HOW many records (rows)?
 
 #### example How many rows are there in the row_name? i.e
 - SELECT 
@@ -27,7 +27,7 @@ What is the 'frequency' of values in the rating column in the film table?
 
 # query Engine as follows in order
 - SELECT
--  FROM
+- FROM
 - LIMIT
 - GROUP
 - ORDER
