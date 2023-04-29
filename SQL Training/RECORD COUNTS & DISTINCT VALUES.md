@@ -24,7 +24,7 @@ What is the 'frequency' of values in the rating column in the film table?
 - GROUP BY rating
 #### NOTE ( 'group by' has to be after the 'from', and 'order by' has to be after the the 'group by', 'limits' after the order by, 'filters' between the 'from' and 'group by'
 
-# query Engine as follows in order
+# Query Engine as follows in order
 - SELECT
 - FROM
 - LIMIT
