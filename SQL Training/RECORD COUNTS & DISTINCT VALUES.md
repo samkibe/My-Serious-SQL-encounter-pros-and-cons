@@ -42,6 +42,7 @@ What is the 'frequency' of values in the rating column in the film table?
 - LIMIT 5;
 
 #### WORKED 
+Question What are the 5 most frequent rating and category combination in the film_list table?
 - SELECT
 - rating, category,
 - COUNT(*) AS frequency
