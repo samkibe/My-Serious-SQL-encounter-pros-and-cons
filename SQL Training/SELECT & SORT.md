@@ -13,7 +13,7 @@
 - schema.name identifies the schema then (.) table in that schema in a case where there is multiple schemas or in a broad DB.
 
 3. ### LIMIT X; 
-- IF WE DO NOT KNOW THE AMOUNT OF THE DATA OR COLUMNS WE USE LIMIT SO THAT NOT TO CRASH THE SYSTEM. It's the best practise to always use a limit.
+- IF WE DO NOT KNOW THE AMOUNT OF THE DATA OR COLUMNS WE USE 'LIMIT' SO THAT we do not CRASH THE SYSTEM. It's of best practise to always use a limit.
 
 # SORTING TEXT COLUMN
 4. ### ORDER BY
