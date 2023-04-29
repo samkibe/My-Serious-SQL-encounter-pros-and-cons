@@ -17,10 +17,17 @@
 
 # SORTING TEXT COLUMN
 4. ### ORDER BY
-- When sorting we basically use 'order by' at default, whose results or output is in ascending alphabetical order.
+- When sorting we basically use 'order by' at default, whose results or output is in ascending alphabetical order. However we can include DESC to sort in descending or reverse order.
 
 ## example query with all above intergrated 📧
 - SELECT country
 - FROM dvd-rental.country
-- ORDER BY country
+- ORDER BY country DESC
+- LIMIT 5;
+
+# Cool example of SORT & LIMIT
+#### what are the 5 lowest total-sales values in the sales_by_film_category table 
+- SELECT total_sales
+- FROM dvd-rentals.sales_by_film_category
+- ORDER BY 1 (for 5 highest we might want to include DESC after 1, my view)
 - LIMIT 5;
