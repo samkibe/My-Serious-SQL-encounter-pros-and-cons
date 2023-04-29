@@ -1,9 +1,25 @@
-#### SELECT STATEMENTS
-##### SELECT
+# SELECT STATEMENTS
+### SELECT
 - col_name, (commas are very important)
 - col_name
+
 ##### incase we want every item on a table
-- * for all
-##### incase we want a particular or soppecific item on a table we use item ID
-##### FROM schema_name.table_name; (and the semi colon always tellS the system where the query ends)
+- * we use an 'asterisk' for all
+##### incase we want a particular or specific item on a table we use the item ID
+- item_id
+
+### FROM schema_name.table_name; (and the semi colon always tellS the system where the query ends)
 schema.name identifies the schema then (.) table in that schema in a case where there is multiple schemas or in a broad DB.
+
+### LIMIT X; 
+- IF WE DO NOT KNOW THE AMOUNT OF THE DATA OR COLUMNS WE USE LIMIT SO THAT NOT TO CRASH THE SYSTEM. It's the best practise to always use a limit.
+
+# SORTING TEXT COLUMN
+### ORDER BY
+- When sorting we, basically use order by at default which gives results or output in alphabetical order.
+
+## exmaple query with all above intergrated 📧
+- SELECT country
+- FROM dvd-rental.country
+- ORDER BY country
+- LIMIT 5;
