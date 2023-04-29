@@ -19,7 +19,7 @@ FROM schema_name.table_name
 ### 'GROUP BY' EXAMPLE 
 What is the 'frequency' of values in the rating column in the film table?
 - SELECT rating
--     COUNT (*)
+- COUNT (*)
 - FROM dvd_rentals.film_list
 - GROUP BY rating
 #### NOTE ( 'group by' has to be after the 'from', and 'order by' has to be after the the 'group by', 'limits' after the order by, 'filters' between the 'from' and 'group by'
