@@ -19,7 +19,7 @@
 4. ### ORDER BY
 - When sorting we, basically use order by at default which gives results or output in alphabetical order.
 
-## exmaple query with all above intergrated 📧
+## example query with all above intergrated 📧
 - SELECT country
 - FROM dvd-rental.country
 - ORDER BY country
