@@ -27,7 +27,9 @@
 
 # Cool example of SORT & LIMIT
 #### What are the 5 lowest total-sales values in the sales_by_film_category table?
-- SELECT total_sales
+- SELECT total_sales,  (FOR MULTIPLE COLUMNS we have to include a column here)
+- eg category
 - FROM dvd_rentals.sales_by_film_category
 - ORDER BY 1 (for 5 highest we might want to include DESC after 1, my view)
+- OR 'order by' or as from a particular column i.e total_sales
 - LIMIT 5;
