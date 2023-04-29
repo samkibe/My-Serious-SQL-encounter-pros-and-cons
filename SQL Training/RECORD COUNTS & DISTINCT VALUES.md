@@ -32,3 +32,12 @@ What is the 'frequency' of values in the rating column in the film table?
 - ORDER BY
 - LIMITS
 
+#### EXAMPLE of a recommmended syntax
+- SELECT 
+- rating, category
+- COUNT(*) AS frequency
+- FROM dvd_rental.film-list
+- GROUP BY rating, category
+- ORDER BY frequency DESC
+- LIMIT 5;
+
