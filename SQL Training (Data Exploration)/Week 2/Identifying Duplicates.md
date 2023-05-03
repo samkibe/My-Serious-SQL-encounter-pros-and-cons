@@ -13,4 +13,9 @@ Data engineering - indexes and partitioning of datasets is biggest factors in D
 
 example of a CTE
 
+- WITH deduped_logs AS (
+- SELECT DISTINCT *
+- FROM health.user_logs
+- ),
+
 #### 4. Do we actually want to keep ur duplicates? important question
