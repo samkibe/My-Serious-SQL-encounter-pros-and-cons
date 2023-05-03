@@ -6,5 +6,8 @@
 
 ### Further AnalYsis
 - COUNT (*) & COUNT DISTINCT to find columns of interest
-- Percetage calculation using window function ( COUNT(*)/ divide by SUM(COUNT(*))over(empty partition)
+- Percetage calculation using window function ( COUNT (*) / divide by SUM(COUNT (*) ) over(empty partition)
 - Investigate specific values
+
+### Data Inspection
+- measure_value = 0 introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition
