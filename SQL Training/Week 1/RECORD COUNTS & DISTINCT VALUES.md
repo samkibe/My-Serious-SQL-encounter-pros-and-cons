@@ -19,7 +19,7 @@ FROM schema_name.table_name
 - FROM table.name
 
 ### GROUP BY COUNT
-- IF QUESTION asks frequency it is asking for the COUNT, does not check for null
+- IF QUESTION asks for "frequency" it is asking for the COUNT, does not check for null
 - Most important thing to note, for 'group by' only 1 row of each group is returned
 
 ### 'GROUP BY' EXAMPLE 
