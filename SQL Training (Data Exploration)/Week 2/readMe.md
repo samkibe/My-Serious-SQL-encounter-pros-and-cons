@@ -36,4 +36,28 @@ example
 - FROM health.user_logs
 - WHERE measure = 'blood_pressure'; we should use quotes if we are looking for a string in the column
 
+## WHERE LOOKING FOR BOTH 'measure & measure_value' ( WE use AND) 
+In other cases we use AND,&&,OR WHERE either CONDITIONs are TRUE
+example
+- SELECT *
+- FROM health.user_logs
+- WHERE measure = 'blood_pressure' 
+- AND measure_value = 0;
+
+## WHERE there is 'NULL' values
+- SELECT *
+- FROM schema.name.table.name
+- WHERE table.name is NULL
+example for real data
+- SELECT *
+- FROM health.user_logs
+- WHERE systolic is NULL; 
+for null
+- SELECT measure, COUNT(*)
+- FROM health.user_logs
+- WHERE systolic is NULL OR systolic = 0
+- GROUP BY measure; 
+
+
+
 
