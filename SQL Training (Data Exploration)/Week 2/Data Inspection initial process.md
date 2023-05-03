@@ -26,7 +26,7 @@ example
 - WHERE measure = 'blood_pressure'; we should use quotes if we are looking for a string in the column
 
 ## WHERE LOOKING FOR BOTH 'measure & measure_value' ( WE use AND) 
-In other cases we use AND,&&,OR WHERE either CONDITIONs are TRUE
+In other cases we use AND,&&,OR : where either CONDITIONs are TRUE
 example
 - SELECT *
 - FROM health.user_logs
