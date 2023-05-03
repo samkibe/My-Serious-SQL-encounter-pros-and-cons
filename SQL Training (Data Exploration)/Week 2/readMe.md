@@ -10,7 +10,7 @@
 - Investigate specific values
 
 ### Data Inspection with examples
-## 1. measure_value = 0
+## 1. IF measure_value = 0 (Measure in this case is an entity in the Health analytics Data)
 introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition, the 'WHERE' filter is supposed to be after the 'FROM'
 par exemple' 
 - SELECT * 
