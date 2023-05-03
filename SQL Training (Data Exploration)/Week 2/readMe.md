@@ -10,4 +10,8 @@
 - Investigate specific values
 
 ### Data Inspection
-- measure_value = 0 introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition
+- measure_value = 0 introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition, the 'WHERE' filter is supposed to be after the 'FROM'
+- par exemple' 
+SELECT * 
+FROM schema_name.table.name
+WHERE measure-value = 0
