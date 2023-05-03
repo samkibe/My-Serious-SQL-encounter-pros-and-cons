@@ -13,11 +13,11 @@
 ## 1. measure_value = 0
 introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition, the 'WHERE' filter is supposed to be after the 'FROM'
 par exemple' 
-1. - SELECT * 
+- SELECT * 
 - FROM schema_name.table.name
 - WHERE measure-value = 0
 
-2. - SELECT * 
+- SELECT * 
 - FROM health.user_logs
 - WHERE measure_value = 0;
 
