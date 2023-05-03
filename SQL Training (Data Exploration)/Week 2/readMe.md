@@ -9,8 +9,9 @@
 - Percetage calculation using window function ( COUNT (*) / divide by SUM(COUNT (*) ) over(empty partition)
 - Investigate specific values
 
-### Data Inspection
-- measure_value = 0 introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition, the 'WHERE' filter is supposed to be after the 'FROM'
+### Data Inspection with examples
+## 1. measure_value = 0
+introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition, the 'WHERE' filter is supposed to be after the 'FROM'
 - par exemple' 
 - SELECT * 
 - FROM schema_name.table.name
