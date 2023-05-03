@@ -8,8 +8,10 @@ example
 #### 2. Should we remove all of them NO - apply DISTINCT to wipe, although inspect data first
 #### 3. How can we inspect our duplicates? 
 - SELECT COUNT (DISTINCT *) FROM health.user_logs; 
-- Above query can not work until a 'CTE' (common table expression) or a 'SUBQUERY' is introduced or a 'TEMPORARY TABLE' is created to instigate DISTINCT where possible (advanced)
-Data engineering - indexes and partitioning of datasets is biggest factors in D
+- Above query can not work until a 'CTE' (common table expression) or a 'SUBQUERY' is introduced or a 'TEMPORARY TABLE' is created to instigate DISTINCT where possible (advanced), IT GOOD TO STICK TO cteS BECAUSE THEY ARE EASY TO READ AND WRITE IN MEMORY.
+
+
+Data engineering - indexes and partitioning of datasets is biggest factors in DE
 
 example of a CTE namely 'deduped_logs' to find the number of unique records
 
