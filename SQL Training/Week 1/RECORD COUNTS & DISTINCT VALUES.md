@@ -8,9 +8,15 @@ FROM schema_name.table_name
 ### UNIQUE COMLUMN VALUES
 
 - SELECT 
-- DISTINCT rating
-- if count of unique values COUNT (DISTINCT category)AS item_name etc
+- DISTINCT rating (column.name) (We use distinct when we want to look for unique values within a column)
+- if count of unique values COUNT (DISTINCT category) AS item_name etc
 - FROM dvd_rentals.film_list (removes diplucates)
+
+### COUNT DISTINCT 
+
+- SELECT 
+- DISTINCT col 1, col 2
+- FROM table.name
 
 ### GROUP BY COUNT
 - IF QUESTION asks frequency it is asking for the COUNT, does not check for null
