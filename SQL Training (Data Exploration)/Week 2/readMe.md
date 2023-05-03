@@ -12,16 +12,16 @@
 ### Data Inspection with examples
 ## 1. measure_value = 0
 introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition, the 'WHERE' filter is supposed to be after the 'FROM'
-- par exemple' 
-- SELECT * 
+par exemple' 
+1. - SELECT * 
 - FROM schema_name.table.name
 - WHERE measure-value = 0
 
-- SELECT * 
+2. - SELECT * 
 - FROM health.user_logs
 - WHERE measure_value = 0;
 
-Look for values where the measure-value = 0
+question - Look for values where the measure-value = 0
 - SELECT measure, 
 - COUNT (*)
 - FROM health.user_logs
