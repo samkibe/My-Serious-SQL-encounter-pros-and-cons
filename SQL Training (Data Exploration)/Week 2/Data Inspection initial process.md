@@ -6,7 +6,7 @@ introduces a 'WHERE CLAUSE' to keep only values which meet a logical condition, 
 par exemple' 
 - SELECT * 
 - FROM schema_name.table.name
-- WHERE measure-value = 0
+- WHERE measure_value = 0
 
 - SELECT * 
 - FROM health.user_logs
