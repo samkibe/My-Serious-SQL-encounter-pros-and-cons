@@ -4,7 +4,7 @@
 - Find out how many records are there using 'COUNT (*)'
 - Any other things 'of' interest
 
-### Further AnalYsis
+### Further Analysis
 - COUNT (*) & COUNT DISTINCT to find columns of interest
 - Percetage calculation using window function ( COUNT (*) / divide by SUM(COUNT (*) ) over(empty partition)
 - Investigate specific values
