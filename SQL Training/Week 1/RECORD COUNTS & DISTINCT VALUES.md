@@ -15,7 +15,7 @@ FROM schema_name.table_name
 ### COUNT DISTINCT 
 
 - SELECT 
-- DISTINCT col 1, col 2
+- DISTINCT col 1, col 2 (gives a distinct combination of columns)
 - FROM table.name
 
 ### GROUP BY COUNT
