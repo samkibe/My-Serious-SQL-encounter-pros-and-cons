@@ -35,3 +35,9 @@ final output
 #### 4. Do we actually want to keep ur duplicates? important question
 - GROUP BY COUNT (*) with all columns - this is important if we want to return just the duplicate data,
 best way to return all data point then compare all duplicates and non duplicates.
+
+- SELECT id,log_date, measure, measure_value, systolic, diastolic
+- COUNT (*) AS record_counts
+- FROM health.user_logs
+- GROUP BY id, log_date, measure, measure_value, systolic, diastolic
+- ORDER BY record_counts DESC;
