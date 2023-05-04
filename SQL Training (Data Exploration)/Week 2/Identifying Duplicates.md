@@ -70,4 +70,31 @@ id,
 ) 
 - SELECT * FROM final_output
 - ORDER BY total_record_count DESC;
+- (or HAVING COUNT(*) >1;)
 
+## QUESTION WHICH id has the most duplicate values
+- WITH cte_kib_count AS (
+SELECT 
+id,
+log_date, 
+measure, 
+measure_value, 
+systolic, 
+diastolic,
+- COUNT(*) AS frequency
+- FROM health.user_logs
+- GROUP BY 
+id, 
+log_date, 
+measure, 
+measure_value, 
+systolic, 
+diastolic
+- HAVING COUNT(*) > 1
+)
+- SELECT
+id, 
+- SUM(frequency) AS total_duplicate_records
+- - FROM cte_kib_count
+- GROUP BY id
+- ORDER BY total_duplicate_records DESC;
