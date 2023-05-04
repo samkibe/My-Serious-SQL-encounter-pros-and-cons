@@ -43,7 +43,7 @@ best way to return all data point then compare all duplicates and non duplicates
 - ORDER BY record_counts DESC;
 
 ####### NOW TO INVESTIGATE DUPLICATES
-WITH groupby_count AS (
+- WITH groupby_count AS (
 SELECT 
 id,
 log_date, 
@@ -51,9 +51,9 @@ measure,
 measure_value, 
 systolic, 
 diastolic,
-COUNT(*) AS frequency
-FROM health.user_logs
-GROUP BY 
+- COUNT(*) AS frequency
+- FROM health.user_logs
+- GROUP BY 
 id, 
 log_date, 
 measure, 
@@ -62,12 +62,12 @@ systolic,
 diastolic
 ),
 final_output AS (
-SELECT
+- SELECT
 id, 
-COUNT(*) AS total_record_count
-FROM groupby_count
-GROUP BY id
+- COUNT(*) AS total_record_count
+- FROM groupby_count
+- GROUP BY id
 ) 
-SELECT * FROM final_output
-  ORDER BY total_record_count DESC;
+- SELECT * FROM final_output
+- ORDER BY total_record_count DESC;
 
