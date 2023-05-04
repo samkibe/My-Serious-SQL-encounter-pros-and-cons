@@ -100,4 +100,32 @@ id,
 - ORDER BY total_duplicate_records DESC;
 
 #054250c692e07a9fa9e62e345231df4b54ff435d
-## QUESTION REMOVE MOST DUBLICATE ID THEN FIND LOG_DATE WITH MOST DUPLICATE VALUE
+
+## QUESTION REMOVE MOST DUBLICATE ID THEN FIND LOG_DATE WITH MOST DUPLICATE VALUES
+
+- WITH cte_kib_count AS (
+- SELECT 
+id,
+log_date, 
+measure, 
+measure_value, 
+systolic, 
+diastolic,
+- COUNT(*) AS frequency
+- FROM health.user_logs
+- GROUP BY 
+id, 
+log_date, 
+measure, 
+measure_value, 
+systolic, 
+diastolic
+- HAVING COUNT(*) > 1
+)
+- SELECT
+log_date,
+- SUM(frequency) AS total_duplicate_records
+- FROM cte_kib_count
+- WHERE id != '054250c692e07a9fa9e62e345231df4b54ff435d'
+- GROUP BY log_date
+- ORDER BY total_duplicate_records DESC;
