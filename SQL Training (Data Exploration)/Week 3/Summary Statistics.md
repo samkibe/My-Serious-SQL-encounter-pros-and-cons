@@ -10,3 +10,13 @@ What is the average measure_value? below are our measure types in our dataset , 
 - weight
 
 THEN INSPECT THEM 
+
+example sequel for measure inspections
+- SELECT
+ measure,
+ - AVG(measure_value) AS avg_measure_value
+- FROM
+  health.user_logs
+- GROUP BY
+ measure;
+  
