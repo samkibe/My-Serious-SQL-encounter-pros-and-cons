@@ -28,7 +28,7 @@ example sequel for measure inspections
  3. for MODE
  - MODE() WITHIN GROUP (ORDER BY example_values) AS mode_value
  
- ## in code
+ #### in code for measure
 - SELECT
  measure,
 - { AVG(measure_value) AS avg_measure_value }
@@ -38,5 +38,14 @@ example sequel for measure inspections
   health.user_logs
 - GROUP BY
  measure;
+ 
+ #### in code fro weight
+- SELECT
+- AVG(measure_value) AS avg_weight,
+- PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_value) AS medium_weight,
+- MODE() WITHIN GROUP (ORDER BY measure_value) AS mode_weight
+- FROM
+  health.user_logs
+- HERE measure = 'weight';
   
   
