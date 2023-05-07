@@ -27,4 +27,17 @@ example sequel for measure inspections
  - PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY example_values) AS medium_value
  3. for MODE
  - MODE() WITHIN GROUP (ORDER BY example_values) AS mode_value
+ 
+ ## in code
+- SELECT
+ measure,
+-- AVG(measure_value) AS avg_measure_value
+--PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_value) AS medium_value
+--MODE() WITHIN GROUP (ORDER BY measure_value) AS mode_value
+
+- FROM
+  health.user_logs
+- GROUP BY
+ measure;
+  
   
