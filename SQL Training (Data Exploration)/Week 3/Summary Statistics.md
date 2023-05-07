@@ -1,8 +1,8 @@
-#### APPLIED STATS
-EXAMPLE CODE SNIPPET to investigate measure in our dataset 'HEALTH ANALYTICS DATA'
-- SELECT measure_value FROM health.user_logs
-- WHERE measure = 'weight'
-- LIMIT 10;
+### APPLIED STATS
+#### Central Tendacy (fro statistics 101)
+- Mean/Average (Arithmetic mean - SUM(Total)/number of values
+- Medium (50th percentile, finding the middle value)
+- Mode (most frequent value/value that appears the most/common value/value with the highest occurences)
 
 What is the average measure_value? below are our 'measure types' in our dataset , 'health analytics data' AND to figure out averag, we are going to use 'GROUP BY'
 - blood glucose
