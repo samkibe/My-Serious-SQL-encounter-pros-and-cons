@@ -20,7 +20,7 @@ example sequel for measure inspections
 - GROUP BY
  measure;
  
- ### SQL IMPLMENTATION FRO AVG/MEAN MEDIAN & MODE copy & paste no need to think so much about it
+ ### SQL IMPLMENTATION FOR AVG/MEAN MEDIAN & MODE copy & paste no need to think so much about it
  1. for AVG/MEAN
  - AVG(example_values) AS mean_value
  2. for MEDIUM c&p
