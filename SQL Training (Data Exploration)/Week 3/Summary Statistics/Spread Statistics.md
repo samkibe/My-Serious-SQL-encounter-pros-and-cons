@@ -29,7 +29,7 @@ VARIANCE = (STANDARD DEVIATION)SQUARED/ 2
 2. for STDDEV
  - STDDEV(example_values) AS std_dev_value
 
- ## then check how ROUND TO 2 DECIMAL PLACE is used in below examples
+ ## then check how ROUND TO 2 DECIMAL PLACES is used in below examples
 - SELECT
 - ROUND(VARIANCE(measure_value),2) AS variance_weight,
 - ROUND(STDDEV(measure_value),2) AS stddev_weight
