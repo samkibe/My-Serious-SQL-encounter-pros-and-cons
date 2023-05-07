@@ -1,8 +1,13 @@
 ##### WHAT is the MIN, MAX,  range [MIN - MAX] (body) weights in our Dataset 'Health Analytics data'?
 
 ### SQL IMPLMENTATION FOR MAX MIN & RANGE copy & paste no need to think so much about it
-
-
+1. for MAX
+ - MAX(example_values) AS max_value
+2. for MIN
+ - MIN(example_values) AS min_value
+3. for RANGE
+ - MIN(example_values) - MAX(example_values) AS weight_range
+ 
 example code in our dataset
 - SELECT
 - MIN(measure_value) AS min_weight,
