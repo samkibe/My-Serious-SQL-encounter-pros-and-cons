@@ -39,7 +39,7 @@ example sequel for measure inspections
 - GROUP BY
  measure;
  
- #### in code fro weight
+ #### in code for weight in 'kilos'
 - SELECT
 - AVG(measure_value) AS avg_weight,
 - PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_value) AS medium_weight,
