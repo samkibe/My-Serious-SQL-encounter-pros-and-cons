@@ -16,4 +16,6 @@
 ##### Variance & Standard Deviation ALWAY COMPARING SOMETHING WITH THE 'MEAN'
 VARIANCE = (STANDARD DEVIATION)SQUARED/ 2
 ### SQL IMPLMENTATION FOR VARIANCE & STDDEV copy & paste no need to think so much about it
+check how round is used in below examples
+
 
