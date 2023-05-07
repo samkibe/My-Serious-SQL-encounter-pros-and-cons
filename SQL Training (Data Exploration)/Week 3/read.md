@@ -11,11 +11,6 @@ example of sql code snippets to investigate health data include :-
 - SELECT measure_value FROM health.user_logs
 - LIMIT 10;
 
-##### 4
-- SELECT measure_value FROM health.user_logs
-- WHERE measure = 'weight'
-- LIMIT 10;
-
 ### Central Tendacy (fro statistics 101)
 - Mean/Average (Arithmetic mean - SUM(Total)/number of values
 - Medium (50th percentile, finding the middle value)
