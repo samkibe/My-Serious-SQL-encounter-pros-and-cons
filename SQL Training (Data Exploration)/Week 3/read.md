@@ -1,6 +1,7 @@
 ### We will be using Health analytics data
 
 #### hack - shift + enter automaticlly formats sequel on sql pad
+#### USE ROUND when rounding off to lesser decimal point of your requirement
 
 EXAMPLE CODE SNIPPET to investigate measure in our dataset 'HEALTH ANALYTICS DATA' :-
 ##### 1
