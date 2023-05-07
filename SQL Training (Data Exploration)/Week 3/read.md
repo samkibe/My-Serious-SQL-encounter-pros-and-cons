@@ -1,4 +1,6 @@
 ### We will be using Health analytics data
+#### hack - shift + enter automaticlly formats sequel on sql pad
+
 example of sql code snippets to investigate health data include :-
 ##### 1
 - SELECT * FROM health.user_logs
