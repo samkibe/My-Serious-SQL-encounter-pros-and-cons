@@ -19,4 +19,12 @@ example sequel for measure inspections
   health.user_logs
 - GROUP BY
  measure;
+ 
+ ### SQL IMPLMENTATION FRO AVG/MEAN MEDIAN & MODE copy & paste no need to think so much about it
+ 1. for AVG/MEAN
+ - AVG(example_values) AS mean_value
+ 2. for MEDIUM c&p
+ - PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY example_values) AS medium_value
+ 3. for MODE
+ - MODE() WITHIN GROUP (ORDER BY example_values) AS mode_value
   
