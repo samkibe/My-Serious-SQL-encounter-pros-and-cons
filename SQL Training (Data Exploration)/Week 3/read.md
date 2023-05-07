@@ -16,4 +16,4 @@ example of sql code snippets to investigate health data include :-
 ### Central Tendacy (fro statistics 101)
 - Mean/Average (Arithmetic mean - SUM(Total)/number of values
 - Medium (50th percentile, finding the middle value)
-- Mode (most frequent value/value that appears the most/common value)
+- Mode (most frequent value/value that appears the most/common value/value with the highest occurences)
