@@ -24,12 +24,11 @@ example code in our dataset
 ##### Variance & Standard Deviation ALWAY COMPARING SOMETHING WITH THE 'MEAN'
 VARIANCE = (STANDARD DEVIATION)SQUARED/ 2
 ### SQL IMPLMENTATION FOR VARIANCE & STDDEV copy & paste no need to think so much about it
-1. for MAX
- - MAX(example_values) AS max_value
-2. for MIN
- - MIN(example_values) AS min_value
-3. for RANGE
- - MIN(example_values) - MAX(example_values) AS weight_range
+1. for VARIANCE
+ - VARIANCE(example_values) AS variance_value
+2. for STDDEV
+ - STDDEV(example_values) AS std_dev_value
+
  then check how round is used in below examples
 
 
