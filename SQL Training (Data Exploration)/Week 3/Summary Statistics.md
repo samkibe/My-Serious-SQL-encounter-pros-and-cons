@@ -31,10 +31,9 @@ example sequel for measure inspections
  ## in code
 - SELECT
  measure,
--- AVG(measure_value) AS avg_measure_value
---PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_value) AS medium_value
---MODE() WITHIN GROUP (ORDER BY measure_value) AS mode_value
-
+- { AVG(measure_value) AS avg_measure_value }
+- { PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_value) AS medium_value }
+- { MODE() WITHIN GROUP (ORDER BY measure_value) AS mode_value }
 - FROM
   health.user_logs
 - GROUP BY
