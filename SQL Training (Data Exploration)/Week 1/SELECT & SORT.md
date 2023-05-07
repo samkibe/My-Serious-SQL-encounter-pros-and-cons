@@ -19,6 +19,7 @@
 # SORTING TEXT COLUMN
 4. ### ORDER BY
 - When sorting we basically use 'order by' at default, whose results or output is in ascending alphabetical order. However we can include DESC to sort in descending or reverse order.
+- ORDER BY 1, depicts the firt column SELECT ""
 
 ## example query with all above intergrated 📧
 - SELECT country
