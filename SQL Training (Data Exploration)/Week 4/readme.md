@@ -15,4 +15,4 @@ Using Health analytics Data
 
 ### CAST at Median fuction is used to convert float the output to NUMERIC
 EXAMPLE FIND MEDIAN?
-- CAST(ROUND(PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_value) AS NUMERIC), 2)AS medium_weight,
+- CAST(PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_value) AS NUMERIC), 2) AS median_value]
