@@ -29,7 +29,7 @@ SOLUTION : (dism.exe /online /enable-feature /featurename:VirtualMachinePlatform
 When it came to installing ubuntu, well, my Microsoft store was missing, however after some intensive research I came across a life hack, 
 SOLVED: If you are missing Microsoft store on your pc first download Xbox APP, and at the bottom of the environment they prompt a user to install Microsoft store and ta-daa!!!
 
-#BigQuery SETUP IS EASY! 
+# BigQuery SETUP! EASY
 Visit the official Google guide to setup a free BigQuery Sandbox instance – you can use an existing Gmail account or setup a new one just for the Serious SQL course.
 
 https://cloud.google.com/bigquery/docs/sandbox
