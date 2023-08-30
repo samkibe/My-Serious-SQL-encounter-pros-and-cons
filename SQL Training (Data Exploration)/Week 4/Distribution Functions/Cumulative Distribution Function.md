@@ -9,7 +9,7 @@
 ## EXAMPLE of analytical functions
 - NTILE(1OO) IS THE NUMBER OF BACKETS OR BLOCKS YOU WANT TO SPLIT YOUR DATA INTO.
 - NTILE(10/100) OVER (ORDER  BY measure_value) AS percentile
-
+### algorithmn
 - ( SELECT measure_value,
 - NTILE(100) OVER (ORDER  BY measure_value) AS percentile
 - FROM health.user_logs
