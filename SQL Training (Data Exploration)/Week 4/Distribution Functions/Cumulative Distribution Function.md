@@ -1,14 +1,14 @@
 ## Data Algorith for a CDF
-- a Sort values ascending
-- b assign 1-100 percentile
-- c for each (GROUP BY) PERCENTILE To calc floor& ceiling values, and record (FOR EACH always asks for GROUP BY)
+- Sort values ascending
+- assign 1-100 percentile
+- for each (GROUP BY) PERCENTILE To calc floor& ceiling values, and record (FOR EACH always asks for GROUP BY)
 - ALL Window functions are analytical fuctions, but not all aqnalytical fuunctions are window functions.
 - Analytical fuctions are the larger set where window functions exist
 - Window fuctions are a subset of analytical functions
 
 ## EXAMPLE of analytical functions
-- a NTILE(1OO) IS THE NUMBER OF BACKETS OR BLOCKS YOU WANT TO SPLIT YOUR DATA INTO.
-- b NTILE(10/100) OVER (ORDER  BY measure_value) AS percentile
+- NTILE(1OO) IS THE NUMBER OF BACKETS OR BLOCKS YOU WANT TO SPLIT YOUR DATA INTO.
+- NTILE(10/100) OVER (ORDER  BY measure_value) AS percentile
 
 - SELECT measure_value,
 - NTILE(100) OVER (ORDER  BY measure_value) AS percentile
