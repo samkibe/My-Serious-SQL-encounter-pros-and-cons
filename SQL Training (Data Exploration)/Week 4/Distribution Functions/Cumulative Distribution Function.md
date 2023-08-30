@@ -35,9 +35,26 @@ Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - FROM percentile_values
 - GROUP BY percentile
 - ORDER BY percentile;
+  
 # OR
-DROP TABLE IF EXISTS 
-SELECT *
-FROM health.user_logs
-WHERE measure = 'weight'
-AND measure_value BETWEEN 1 AND 201;
+- DROP TABLE IF EXISTS clean_weight_logs;
+- CREATE TEMP TABLE clean_weight_logs AS (
+- SELECT *
+- FROM health.user_logs
+- WHERE measure = 'weight'
+- AND measure_value BETWEEN 1 AND 201
+- );
+- WITH percentile_values AS (   
+- SELECT measure_value,
+- NTILE(100) OVER (ORDER  BY measure_value) AS percentile
+- FROM clean_weight_logs
+- WHERE measure = 'weight'
+- )
+- SELECT
+- percentile,
+- MIN(measure_value) AS floor_value,
+- MAX(measure_value) AS ceiling_value,
+- COUNT(*) AS percentile_counts
+- FROM percentile_values
+- GROUP BY percentile
+- ORDER BY percentile;
