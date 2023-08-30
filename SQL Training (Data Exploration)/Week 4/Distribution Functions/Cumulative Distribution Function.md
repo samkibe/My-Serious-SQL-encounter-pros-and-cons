@@ -1,4 +1,4 @@
-## Data Algorith for a CDF
+## Data Algorithmn for a CDF
 - Sort values ascending
 - assign 1-100 percentile
 - for each (GROUP BY) PERCENTILE To calc floor& ceiling values, and record (FOR EACH always asks for GROUP BY)
