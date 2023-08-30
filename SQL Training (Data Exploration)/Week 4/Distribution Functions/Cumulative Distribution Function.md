@@ -17,4 +17,19 @@
 
 Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - A CTE and inside A cte we have an NTILE(100) OR CUME_DIST
-- Then an aggregate function with MIN, MAX and COUNT
+- Then an aggregate function with MIN, MAX and COUNT as below;-
+- 
+- WITH percentile~_value AS (   ### a cte
+- SELECT measure_value,
+- NTILE(100) OVER (ORDER  BY measure_value) AS percentile
+- FROM health.user_logs
+- WHERE measure = 'weight'
+- )
+- SELECT
+- percentile,
+- MIN(measure_value) AS floor_value,
+- MAX(measure_value) AS ceiling_value,
+- COUNT(*) AS percentile_counts
+- FROM percentile_ values
+- GROUP BY percentile
+- ORDER BY percentile;
