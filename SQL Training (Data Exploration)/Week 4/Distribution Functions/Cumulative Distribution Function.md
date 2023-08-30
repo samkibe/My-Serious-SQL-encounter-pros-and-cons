@@ -38,6 +38,7 @@ Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
   
 # OR
 - DROP TABLE IF EXISTS clean_weight_logs;
+  ### removing outliers using a temp teble
 - CREATE TEMP TABLE clean_weight_logs AS (
 - SELECT *
 - FROM health.user_logs
