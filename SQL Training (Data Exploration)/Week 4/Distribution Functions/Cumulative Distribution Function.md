@@ -1,4 +1,8 @@
-## NOTES
+## Data Algorith for a CDF
+- Sort values ascending
+- assign 1-100 percentile
+- fro each (GROUP BY) PERCENTILE To calc floor& ceiling values, and record
+
 - FOR EACH TO ask for GROUP BY
 - ALL Window functions are analytical fuctions, but not all aqnalytical fuunctions are window functions.
 - Analytical fuctions are the larger set where window functions exist
