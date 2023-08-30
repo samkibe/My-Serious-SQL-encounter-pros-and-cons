@@ -47,7 +47,7 @@ Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - WITH percentile_values AS (   
 - SELECT measure_value,
 - NTILE(100) OVER (ORDER  BY measure_value) AS percentile
-- FROM clean_weight_logs
+- FROM 
 - WHERE measure = 'weight'
 - )
 - SELECT
@@ -63,5 +63,12 @@ Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - find min, max boundaries values
 - split into N equal backets by values
 - for each backet a. cal avg values & record count
-  #### code
-  - SELECT 
+  
+  ### code
+  - SELECT
+  - WIDTH_BUCKET (measure_value, 0, 200, 50)
+  - AVG(measure_value) AS measure_value,
+  - COUNT (*) AS frequency
+  - FROM clean_weight_logs / health.user_logs
+  - GROUP BY bucket
+  - ORDER BY bucket
