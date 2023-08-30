@@ -20,6 +20,7 @@ Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - Then an aggregate function with MIN, MAX and COUNT
   
 ### code snippet as below :- and it is working on Health data
+
 - WITH percentile_values AS (   ### a cte
 - SELECT measure_value,
 - NTILE(100) OVER (ORDER  BY measure_value) AS percentile
@@ -34,3 +35,9 @@ Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - FROM percentile_values
 - GROUP BY percentile
 - ORDER BY percentile;
+# OR
+DROP TABLE IF EXISTS 
+SELECT *
+FROM health.user_logs
+WHERE measure = 'weight'
+AND measure_value BETWEEN 1 AND 201;
