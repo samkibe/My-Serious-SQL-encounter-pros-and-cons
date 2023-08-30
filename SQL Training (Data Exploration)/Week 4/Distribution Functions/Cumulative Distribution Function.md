@@ -58,3 +58,10 @@ Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - FROM percentile_values
 - GROUP BY percentile
 - ORDER BY percentile;
+
+### Frequency distribution 
+- find min, max boundaries values
+- split into N equal backets by values
+- for each backet a. cal avg values & record count
+  #### code
+  - SELECT 
