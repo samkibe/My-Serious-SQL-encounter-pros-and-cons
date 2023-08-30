@@ -10,10 +10,10 @@
 - NTILE(1OO) IS THE NUMBER OF BACKETS OR BLOCKS YOU WANT TO SPLIT YOUR DATA INTO.
 - NTILE(10/100) OVER (ORDER  BY measure_value) AS percentile
 
-- SELECT measure_value,
+-( SELECT measure_value,
 - NTILE(100) OVER (ORDER  BY measure_value) AS percentile
 - FROM health.user_logs
-- WHERE measure = 'weight';
+- WHERE measure = 'weight';) this code is working
 
 Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - A CTE and inside A cte we have an NTILE(100) OR CUME_DIST
