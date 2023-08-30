@@ -17,8 +17,8 @@
 
 Cummulative Distribution function has ;- TO CALCULATE AGGREGATES
 - A CTE and inside A cte we have an NTILE(100) OR CUME_DIST
-- Then an aggregate function with MIN, MAX and COUNT as below;-
-- 
+- Then an aggregate function with MIN, MAX and COUNT 
+#### code snippet as below :-
 - WITH percentile~_value AS (   ### a cte
 - SELECT measure_value,
 - NTILE(100) OVER (ORDER  BY measure_value) AS percentile
