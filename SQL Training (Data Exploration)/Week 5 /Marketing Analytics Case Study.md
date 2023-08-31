@@ -2,11 +2,11 @@
 
 ## Training objective
 - Understanding the Data - Data exploration - Data inspection
-  ### Tables needed
-  ##### Rentals
-  ##### Inventory
-  ##### Film
-  ##### film_category
+Tables needed
+Rentals
+Inventory
+ Film
+film_category
   
 - 
 
