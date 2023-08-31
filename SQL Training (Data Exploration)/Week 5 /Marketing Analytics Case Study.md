@@ -3,19 +3,13 @@
 ## Training objective
 --- Understanding the Data - Data exploration - Data inspection
 ### Tables needed
-- Rentals
-- SELECT *FROM dvd_rentals.rental WHERE customer_id = 130;
-- Inventory
-- SELECT *
-FROM dvd_rentals.inventory
-WHERE film_id = 1;
-- Film
-- Film_category
-- Category
-- Film_actor
-- Actor
-  
-- 
+- Rentals (SELECT *FROM dvd_rentals.rental WHERE customer_id = 130;)
+- Inventory (SELECT * FROM dvd_rentals.inventory WHERE film_id = 1;)
+- Film (SELECT * FROM dvd_rentals.film LIMIT 5;)
+- Film_category (SELECT * FROM dvd_rentals.film_category LIMIT 5;)
+- Category (SELECT * FROM dvd_rentals.category LIMIT 5;)
+- Film_actor (SELECT * FROM dvd_rentals.film_actor WHERE actor_id = 1;)
+- Actor (SELECT * FROM dvd_rentals.actor LIMIT 5;)
 
 ### Step 1 Real campaign Analyst Project
 - WHO?  for who is this analysis being done
