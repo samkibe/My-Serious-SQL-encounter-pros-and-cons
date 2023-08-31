@@ -4,7 +4,11 @@
 --- Understanding the Data - Data exploration - Data inspection
 ### Tables needed
 - Rentals
+- SELECT *FROM dvd_rentals.rental WHERE customer_id = 130;
 - Inventory
+- SELECT *
+FROM dvd_rentals.inventory
+WHERE film_id = 1;
 - Film
 - Film_category
 - Category
