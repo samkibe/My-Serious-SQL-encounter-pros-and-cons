@@ -23,14 +23,14 @@
 - Requirement #2 - Category Film Recommendations - The marketing team has also requested for the 3 most popular films for each customer’s top 2 categories
 - Requirement #3 & #4 -Individual Customer Insights  The number of films watched by each customer in their top 2 categories is required as well as some specific insights.
   
-- For the 1st category, the marketing requires the following insights (requirement 3):
-### How many total films have they watched in their top category?
-### How many more films has the customer watched compared to the average DVD Rental Co customer?
-### How does the customer rank in terms of the top X% compared to all other customers in this film category?
+#### For the 1st category, the marketing requires the following insights (requirement 3):
+- How many total films have they watched in their top category?
+- How many more films has the customer watched compared to the average DVD Rental Co customer?
+- How does the customer rank in terms of the top X% compared to all other customers in this film category?
 
-### For the second ranking category (requirement 4):
-### How many total films has the customer watched in this category?
-### What proportion of each customer’s total films watched does this count make?
+#### For the second ranking category (requirement 4):
+- How many total films has the customer watched in this category?
+- What proportion of each customer’s total films watched does this count make?
 
 
 
