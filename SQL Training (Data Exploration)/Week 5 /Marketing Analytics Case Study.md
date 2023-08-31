@@ -1,12 +1,15 @@
 #### We have been asked tasked to support the customer analytics team at DVD Rental Co who have been tasked with generating the necessary data points required to populate specific parts of this first-ever customer email campaign.
 
 ## Training objective
-- Understanding the Data - Data exploration - Data inspection
-Tables needed
-Rentals
-Inventory
- Film
-film_category
+--- Understanding the Data - Data exploration - Data inspection
+### Tables needed
+- Rentals
+- Inventory
+- Film
+- Film_category
+- Category
+- Film_actor
+- Actor
   
 - 
 
