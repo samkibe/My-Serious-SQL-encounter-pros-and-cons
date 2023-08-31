@@ -2,9 +2,12 @@
 
 ## Training objective
 - Understanding the Data - Data exploration - Data inspection
-  ### tables needed
-  ## Rentals
-  ## Inventory
+  ### Tables needed
+  ##### Rentals
+  ##### Inventory
+  ##### Film
+  ##### film_category
+  
 - 
 
 ### Step 1 Real campaign Analyst Project
