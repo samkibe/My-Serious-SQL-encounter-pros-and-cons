@@ -32,6 +32,8 @@
 - How many total films has the customer watched in this category?
 - What proportion of each customer’s total films watched does this count make?
 
+- Requirement #5 - Favorite Actor Recommendation - Along with the top 2 categories, marketing has also requested top actor film recommendations where up to 3 more films are included in the recommendations list as well as the count of films by the top acto
+
 
 
 ### Step 3 THEN DRAW AN ENTITY RELATIONSHIP DI8AGRAM
