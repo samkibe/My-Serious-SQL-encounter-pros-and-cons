@@ -37,8 +37,8 @@
 ### Step 3 THEN DRAW AN ENTITY RELATIONSHIP DI8AGRAM
 
 # Results. 
-You’ve watched {rental_count} {category_name} films, that’s {average_comparison} more than the Dvd Rental Co average and puts you in the top {percentile}% of {category_name} gurus!
+1. You’ve watched {rental_count} {category_name} films, that’s {average_comparison} more than the Dvd Rental Co average and puts you in the top {percentile}% of {category_name} gurus!
 
-You’ve watched {rental_count} {category_name} films making up {category_percentage}% of your entire viewing history!
+2. You’ve watched {rental_count} {category_name} films making up {category_percentage}% of your entire viewing history!
 
-You’ve watched <rental_count> films featuring <actor_name>! Here are some other films <first_name> stars in that might interest you!
+3. You’ve watched <rental_count> films featuring <actor_name>! Here are some other films <first_name> stars in that might interest you!
