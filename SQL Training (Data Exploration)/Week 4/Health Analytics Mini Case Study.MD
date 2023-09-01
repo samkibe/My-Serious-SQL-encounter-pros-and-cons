@@ -56,15 +56,15 @@
 
 -- 6. Have logged blood glucose measurements?
 - SELECT
--  COUNT (DISTINCT id)
+- COUNT (DISTINCT id)
 - FROM health.user_logs
-- WHERE measure = 'blood_sugar';
+- WHERE measure = 'blood_glucose';
 
 -- 7. Have at least 2 types of measurements?
 - SELECT
--  COUNT(*)
+- COUNT(*)
 - FROM user_measure_count
-- WHERE COUNT(DISTINCT measures) >= 2;
+- WHERE unique_measures >= 2;
 
 -- 8. Have all 3 measures - blood glucose, weight and blood pressure?
 - SELECT
