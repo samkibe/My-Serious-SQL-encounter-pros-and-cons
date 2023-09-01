@@ -36,6 +36,10 @@ FROM names
 INNER JOIN jobs
   ON names.iid = jobs.iid;
 ## LEFT JOIN // LEFT OUTER JOIN NO RIGHT JOIN
+SELECT names.iid, names.first_name, names.title,jobs.occupation,jobs.salary
+FROM names
+LEFT JOIN jobs
+  ON names.iid = jobs.iid;
 ## FULL JOIN // FULL OUTER JOIN 
 ## CROSSJOIN // FROM Table1,Table2
 ## LEFT SEMI JOIN
