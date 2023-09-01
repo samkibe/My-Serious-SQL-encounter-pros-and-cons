@@ -22,6 +22,7 @@ SELECT
   GROUP BY 1; 
   ________________________________________
 -- 2. How many total measurements do we have per user on average?
+
 ________________________________________
 SELECT
   ROUND(AVG(measure_count)) AS average_value
