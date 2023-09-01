@@ -53,6 +53,6 @@ SELECT
 FROM names
 FULL JOIN jobs
   ON names.iid = jobs.iid;
-## CROSSJOIN // FROM Table1,Table2
+## CROSS JOIN // FROM Table1,Table2  avoid it if necessary
 ## LEFT SEMI JOIN
 ## ANTI JOIN
