@@ -28,63 +28,51 @@ SELECT
   ROUND(AVG(measure_count)) AS average_value
 FROM user_measure_count;
 ________________________________________
-•	3.
-What about the median number of measurements per user?
-________________________________________
 -- 3. What about the median number of measurements per user?
+________________________________________
 SELECT
   PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_count) AS median_value
 FROM user_measure_count;
 ________________________________________
-•	4.
-How many users have 3 or more measurements?
-________________________________________
 -- 4. How many users have 3 or more measurements?
+________________________________________
 SELECT
   COUNT(*)
 FROM user_measure_count
 WHERE measure_count >= 3;
 ________________________________________
-•	5.
-How many users have 1,000 or more measurements?
-________________________________________
 -- 5. How many users have 1,000 or more measurements?
+________________________________________
 SELECT
   COUNT(*)
 FROM user_measure_count
 WHERE measure_count >= 1000;
 ________________________________________
-•	6.
-How many users have logged blood glucose measurements?
-________________________________________
 -- 6. Have only logged blood glucose measurements?
+________________________________________
 SELECT
   COUNT(DISTINCT id)
 FROM health.user_logs
 WHERE measure = 'blood_glucose';
 ________________________________________
-•	7.
-How many users have at least 2 types of measurements?
-________________________________________
 -- 7. Have at least 2 types of measurements?
+________________________________________
 SELECT
   COUNT(*)
 FROM user_measure_count
 WHERE unique_measures >= 2;
 ________________________________________
-•	8.
-How many users have all 3 measures - blood glucose, weight and blood pressure?
-________________________________________
 -- 8. Have all 3 measures - blood glucose, weight and blood pressure?
+________________________________________
 SELECT
   COUNT(*)
 FROM user_measure_count
 WHERE unique_measures = 3;
 ________________________________________
-•	9.
 For users that have blood pressure measurements, what is the median systolic/diastolic blood pressure values?
-________________________________________
+
 -- 9.  What is the median systolic/diastolic blood pressure values?
+________________________________________
 SELECT
   PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY systolic) AS median_systolic,
   PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY diastolic) AS median_diastolic
