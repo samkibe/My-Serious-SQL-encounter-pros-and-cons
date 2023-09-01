@@ -75,7 +75,7 @@ WHERE EXISTS (
   WHERE names.iid = new_jobs.iid
 );
 
-- LEFT JOIN with a DISTINCT followed by a WHERE filter to remove all null values from the resulting joint dataset.
+A LEFT JOIN with a DISTINCT followed by a WHERE filter to remove all null values from the resulting joint dataset.
 
 - SELECT DISTINCT
   names.iid,
