@@ -36,7 +36,7 @@
 
 
 
-### Step 3 THEN DRAW AN ENTITY RELATIONSHIP DI8AGRAM
+### Step 3 THEN DRAW AN ENTITY RELATIONSHIP DIAGRAM
 
 # Results. 
 1. You’ve watched {rental_count} {category_name} films, that’s {average_comparison} more than the Dvd Rental Co average and puts you in the top {percentile}% of {category_name} gurus!
