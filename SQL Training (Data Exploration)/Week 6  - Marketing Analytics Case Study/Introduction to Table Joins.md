@@ -1,5 +1,5 @@
 SQL TABLE JOIN
--- sample table
+### -- sample table
 DROP TABLE IF EXISTS names;
 CREATE TEMP TABLE names AS
 WITH input_data (iid, first_name, title) AS (
