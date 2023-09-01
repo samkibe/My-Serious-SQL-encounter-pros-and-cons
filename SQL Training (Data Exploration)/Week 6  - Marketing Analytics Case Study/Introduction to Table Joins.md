@@ -63,5 +63,25 @@ SELECT
   jobs.salary
 FROM names
 CROSS JOIN jobs;
+
 ## LEFT SEMI JOIN
+SELECT
+  names.iid,
+  names.first_name
+FROM names
+WHERE EXISTS (
+  SELECT iid
+  FROM new_jobs
+  WHERE names.iid = new_jobs.iid
+);
+
+-- LEFT JOIN with a DISTINCT followed by a WHERE filter to remove all null values from the resulting joint dataset.
+SELECT DISTINCT
+  names.iid,
+  names.first_name
+FROM names
+LEFT JOIN new_jobs
+  ON names.iid = new_jobs.iid
+WHERE new_jobs.iid IS NOT NULL;
+
 ## ANTI JOIN
