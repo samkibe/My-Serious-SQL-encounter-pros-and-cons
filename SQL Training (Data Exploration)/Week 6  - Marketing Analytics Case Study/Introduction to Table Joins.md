@@ -76,7 +76,7 @@ WHERE EXISTS (
 );
 
 -- LEFT JOIN with a DISTINCT followed by a WHERE filter to remove all null values from the resulting joint dataset.
-SELECT DISTINCT
+-- SELECT DISTINCT
   names.iid,
   names.first_name
 FROM names
@@ -85,3 +85,12 @@ LEFT JOIN new_jobs
 WHERE new_jobs.iid IS NOT NULL;
 
 ## ANTI JOIN
+SELECT
+  names.iid,
+  names.first_name
+FROM names
+WHERE NOT EXISTS (
+  SELECT 1
+  FROM new_jobs
+  WHERE names.iid = new_jobs.iid
+);
