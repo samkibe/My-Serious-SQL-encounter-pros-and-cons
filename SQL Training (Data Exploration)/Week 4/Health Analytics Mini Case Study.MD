@@ -22,8 +22,8 @@
 - FROM health.user_logs;
 
 -- for questions 2-8 we created a temporary table
-- DROP TABLE IF EXISTS user_measure_count;
-- CREATE TEMP TABLE user_measure_cout
+- DROP TABLE IF EXISTS health.user_measure_count;
+- CREATE TEMP TABLE user_measure_count AS
 - SELECT
  -  id,
   -  COUNT(*) AS measure_count,
@@ -33,19 +33,20 @@
 
 -- 2. How many total measurements do we have per user on average?
 - SELECT
--  ROUND(MEAN(measure_count))
+-  ROUND(AVG(measure_count)) AS average_value
 - FROM user_measure_count;
 
 -- 3. What about the median number of measurements per user?
 - SELECT
--  PERCENTILE_CONTINUOUS(0.5) WITHIN GROUP (ORDER BY id) AS median_value
+- PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_count) AS median_value
 - FROM user_measure_count;
 
 -- 4. How many users have 3 or more measurements?
 - SELECT
--  COUNT(*)
+- COUNT(*)
 - FROM user_measure_count
-- HAVING measure >= 3;
+- WHERE measure_count >= 3;
+
 
 -- 5. How many users have 1,000 or more measurements?
 - SELECT
