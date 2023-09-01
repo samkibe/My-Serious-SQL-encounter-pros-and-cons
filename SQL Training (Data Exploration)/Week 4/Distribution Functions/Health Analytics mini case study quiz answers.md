@@ -1,5 +1,6 @@
 debugged scripts
-•	1.
+
+- •	1.
 How many unique users exist in the logs dataset?
 ________________________________________
 SELECT
