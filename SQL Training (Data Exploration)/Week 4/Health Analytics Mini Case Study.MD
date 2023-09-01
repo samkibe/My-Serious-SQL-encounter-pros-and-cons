@@ -18,7 +18,7 @@
 # code 
 -- 1. How many unique users exist in the logs dataset?
 - SELECT
--  COUNT DISTINCT user_id
+-  COUNT (DISTINCT id)
 - FROM health.user_logs;
 
 -- for questions 2-8 we created a temporary table
