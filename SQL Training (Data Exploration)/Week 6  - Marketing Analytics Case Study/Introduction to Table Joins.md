@@ -54,5 +54,14 @@ FROM names
 FULL JOIN jobs
   ON names.iid = jobs.iid;
 ## CROSS JOIN // FROM Table1,Table2  avoid it if necessary
+SELECT
+  names.iid as name_iid,
+  jobs.iid as job_iid,
+  names.first_name,
+  names.title,
+  jobs.occupation,
+  jobs.salary
+FROM names
+CROSS JOIN jobs;
 ## LEFT SEMI JOIN
 ## ANTI JOIN
