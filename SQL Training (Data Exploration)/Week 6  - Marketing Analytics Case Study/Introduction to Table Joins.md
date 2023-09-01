@@ -26,6 +26,15 @@ WITH input_data (iid, occupation, salary) AS (
 SELECT * FROM input_data;
 Inspecting the names table
 ## INNER JOIN
+SELECT
+  names.iid,
+  names.first_name,
+  names.title,
+  jobs.occupation,
+  jobs.salary
+FROM names
+INNER JOIN jobs
+  ON names.iid = jobs.iid;
 ## LEFT JOIN // LEFT OUTER JOIN NO RIGHT JOIN
 ## FULL JOIN // FULL OUTER JOIN 
 ## CROSSJOIN // FROM Table1,Table2
