@@ -50,15 +50,15 @@
 
 -- 5. How many users have 1,000 or more measurements?
 - SELECT
- - SUM(id)
+- COUNT(*)
 - FROM user_measure_count
-- WHERE measure_count >= 1000;
+- WHERE measure_count>= 1000;
 
 -- 6. Have logged blood glucose measurements?
 - SELECT
--  COUNT DISTINCT id
+-  COUNT (DISTINCT id)
 - FROM health.user_logs
-- WHERE measure is 'blood_sugar';
+- WHERE measure = 'blood_sugar';
 
 -- 7. Have at least 2 types of measurements?
 - SELECT
