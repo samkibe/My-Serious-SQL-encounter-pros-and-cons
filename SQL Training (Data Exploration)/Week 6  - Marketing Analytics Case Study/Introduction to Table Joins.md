@@ -53,7 +53,7 @@ SELECT
 FROM names
 FULL JOIN jobs
   ON names.iid = jobs.iid;
-## CROSS JOIN // FROM Table1,Table2  avoid it if necessary
+## CROSS JOIN // FROM Table1,Table2  avoid it if necessary brings everything in the left and right tables like duplicating
 SELECT
   names.iid as name_iid,
   jobs.iid as job_iid,
@@ -64,7 +64,7 @@ SELECT
 FROM names
 CROSS JOIN jobs;
 
-## LEFT SEMI JOIN
+## LEFT SEMI JOIN looks for what exists in the right table not in the left table
 SELECT
   names.iid,
   names.first_name
@@ -85,7 +85,7 @@ LEFT JOIN new_jobs
   ON names.iid = new_jobs.iid
 WHERE new_jobs.iid IS NOT NULL;
 
-## ANTI JOIN
+## ANTI JOIN  looks what exist on the right table and does not exist on the left table then displays
 SELECT
   names.iid,
   names.first_name
