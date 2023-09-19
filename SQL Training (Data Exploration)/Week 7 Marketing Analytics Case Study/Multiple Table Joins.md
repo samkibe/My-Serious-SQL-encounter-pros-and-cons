@@ -51,3 +51,15 @@ FROM dvd_rentals.inventory;
   FROM dvd_rentals.rental
   GROUP BY inventory_id
   ORDER BY record_counts desc;
+
+-  WITH cte_counts AS ( 
+  SELECT inventory_id, COUNT (*) AS record_counts
+  FROM dvd_rentals.rental
+  GROUP BY inventory_id
+) 
+SELECT
+  record_counts,
+  COUNT(*) as unique_inventory_ids
+FROM cte_counts
+GROUP BY record_counts
+ORDER BY record_counts;
