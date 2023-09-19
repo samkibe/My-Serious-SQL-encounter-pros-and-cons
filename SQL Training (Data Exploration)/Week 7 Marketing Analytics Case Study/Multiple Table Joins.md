@@ -63,3 +63,12 @@ SELECT
 FROM cte_counts
 GROUP BY record_counts
 ORDER BY record_counts;
+
+### Hypothesis 3 : There will be multiple inventory_id records per unique film_id value in the dvd_rentals.inventory table. WHAT INVENTORY EXIST IN STORE!!!
+SELECT
+  film_id,
+  COUNT(DISTINCT inventory_id) 
+  FROM dvd_rentals.inventory
+GROUP BY film_id
+ORDER BY 2 DESC;
+
