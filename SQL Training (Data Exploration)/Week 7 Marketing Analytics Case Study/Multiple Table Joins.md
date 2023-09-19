@@ -38,7 +38,7 @@ WHERE NOT EXISTS (
   FROM dvd_rentals.rental
   WHERE inventory.inventory_id = rental.inventory_id
 
-- The number of unique inventory_id records will be equal in both dvd_rentals.rental and dvd_rentals.inventory tables
+- The number of unique inventory_id records will be equal in both dvd_rentals.rental and dvd_rentals.inventory tables if not then there exist an item on the DB THAT IS UNIQUE OR INACTIVE and we find it using above subquery. below are subqueries to satisfy equality.
 - SELECT
   COUNT(DISTINCT inventory_id)
 FROM dvd_rentals.rental;
