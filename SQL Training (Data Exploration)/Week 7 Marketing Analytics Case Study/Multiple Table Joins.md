@@ -100,8 +100,8 @@ WHERE NOT EXISTS (
 );
 #### right join dont use 
 -- how many foreign keys only exist in the right table and not in the left?
--- note the table reference changes
-SELECT
+- -- note the table reference changes
+- SELECT
   COUNT(DISTINCT inventory.inventory_id)
 FROM dvd_rentals.inventory
 WHERE NOT EXISTS (
