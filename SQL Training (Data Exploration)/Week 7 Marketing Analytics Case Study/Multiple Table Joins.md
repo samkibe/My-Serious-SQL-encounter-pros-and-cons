@@ -1,3 +1,5 @@
+Creating an email template as below for Market analytics
+
 ![Uploading image.png…]()
 Table Joining Journey
 
