@@ -1,3 +1,4 @@
+![Uploading image.png…]()
 Table Joining Journey
 
 #### Join Journey Part	| Start |            	End	  | Foreign Key
