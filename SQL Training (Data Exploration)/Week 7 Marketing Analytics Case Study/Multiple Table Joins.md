@@ -25,3 +25,9 @@ Table Joining Journey
 FROM `dvd_rentals.rental`
 GROUP BY
   customer_id;
+
+###   OR SHOW Show ALL rentals made by A CUSTOMER USING THEIR ID EG customer_id = 130:
+- SELECT *
+FROM dvd_rentals.rental
+WHERE customer_id = 130;
+
