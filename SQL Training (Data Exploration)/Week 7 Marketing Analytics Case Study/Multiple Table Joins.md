@@ -65,10 +65,25 @@ GROUP BY record_counts
 ORDER BY record_counts;
 
 ### Hypothesis 3 : There will be multiple inventory_id records per unique film_id value in the dvd_rentals.inventory table. WHAT INVENTORY EXIST IN STORE!!!
-SELECT
+- SELECT
   film_id,
   COUNT(DISTINCT inventory_id) 
   FROM dvd_rentals.inventory
 GROUP BY film_id
 ORDER BY 2 DESC;
+#### using WITH cte 
+- WITH cte_counts AS (
+  SELECT
+  film_id,
+  COUNT(DISTINCT inventory_id) AS unique_record_counts
+  FROM dvd_rentals.inventory
+GROUP BY film_id
+)
+-- summarize the group by counts above by grouping again on the row_counts from counts_base CTE part
+SELECT
+  unique_record_counts,
+  COUNT(*) as film_id
+FROM cte_counts
+GROUP BY unique_record_counts
+ORDER BY unique_record_counts desc;
 
