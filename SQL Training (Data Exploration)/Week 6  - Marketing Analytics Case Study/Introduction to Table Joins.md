@@ -25,7 +25,7 @@ WITH input_data (iid, occupation, salary) AS (
 )
 SELECT * FROM input_data;
 Inspecting the names table
-## INNER JOIN
+### INNER JOIN
 SELECT
   names.iid,
   names.first_name,
@@ -36,13 +36,13 @@ FROM names
 INNER JOIN jobs
   ON names.iid = jobs.iid;
 
-## LEFT JOIN // LEFT OUTER JOIN NO RIGHT JOIN
+### LEFT JOIN // LEFT OUTER JOIN NO RIGHT JOIN
 SELECT names.iid, names.first_name, names.title,jobs.occupation,jobs.salary
 FROM names
 LEFT JOIN jobs
   ON names.iid = jobs.iid;
   
-## FULL JOIN // FULL OUTER JOIN 
+### FULL JOIN // FULL OUTER JOIN  displays items in the left and right tables 
 SELECT
   names.iid AS name_id,
   jobs.iid AS job_id,
@@ -53,7 +53,7 @@ SELECT
 FROM names
 FULL JOIN jobs
   ON names.iid = jobs.iid;
-## CROSS JOIN // FROM Table1,Table2  avoid it if necessary brings everything in the left and right tables like duplicating
+### CROSS JOIN // FROM Table1,Table2  avoid it if necessary : displays everything in the left and right tables like duplicating
 SELECT
   names.iid as name_iid,
   jobs.iid as job_iid,
@@ -64,7 +64,7 @@ SELECT
 FROM names
 CROSS JOIN jobs;
 
-## LEFT SEMI JOIN looks for what exists in the right table not in the left table
+### LEFT SEMI JOIN : looks for items that exists in the right table but are not in the left table
 SELECT
   names.iid,
   names.first_name
@@ -85,7 +85,7 @@ LEFT JOIN new_jobs
   ON names.iid = new_jobs.iid
 WHERE new_jobs.iid IS NOT NULL;
 
-## ANTI JOIN  looks what exist on the right table and does not exist on the left table then displays
+### ANTI JOIN : looks for items that exist on the right table and does not exist on the left table then displays
 SELECT
   names.iid,
   names.first_name
