@@ -17,3 +17,11 @@ Table Joining Journey
 - average DVD Rental Co customer
 - percentile: How does the customer rank in terms of the top X% compared to all other customers in this film category?
 - category_percentage: What proportion of total films watched does this category make up?
+
+#### THEN We need to generate the rental_count calculation - the number of films that a customer has watched in a specific category.
+- EG SELECT
+ customer_id,
+  COUNT(*) AS rental_count
+FROM `dvd_rentals.rental`
+GROUP BY
+  customer_id;
