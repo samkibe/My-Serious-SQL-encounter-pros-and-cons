@@ -38,7 +38,7 @@ WHERE NOT EXISTS (
   FROM dvd_rentals.rental
   WHERE inventory.inventory_id = rental.inventory_id
 
-#### hypothesis 1 : The number of unique inventory_id records will be equal in both dvd_rentals.rental and dvd_rentals.inventory tables if not then there exist an item on the DB THAT IS UNIQUE OR INACTIVE and we find it using above subquery. below are subqueries to satisfy equality.
+#### Hypothesis 1 : The number of unique inventory_id records will be equal in both dvd_rentals.rental and dvd_rentals.inventory tables if not then there exist an item on the DB THAT IS UNIQUE OR INACTIVE and we find it using above subquery. below are subqueries to satisfy equality.
 - SELECT
   COUNT(DISTINCT inventory_id)
 FROM dvd_rentals.rental;
@@ -46,7 +46,7 @@ FROM dvd_rentals.rental;
   COUNT(DISTINCT inventory_id)
 FROM dvd_rentals.inventory;
 
-### hypothesis 2 : There will be a multiple records per unique inventory_id in the dvd_rentals.rental table
+#### Hypothesis 2 : There will be a multiple records per unique inventory_id in the dvd_rentals.rental table
 - SELECT inventory_id, COUNT (*) AS record_counts
   FROM dvd_rentals.rental
   GROUP BY inventory_id
@@ -64,7 +64,7 @@ FROM cte_counts
 GROUP BY record_counts
 ORDER BY record_counts;
 
-### Hypothesis 3 : There will be multiple inventory_id records per unique film_id value in the dvd_rentals.inventory table. WHAT INVENTORY EXIST IN STORE!!!
+#### Hypothesis 3 : There will be multiple inventory_id records per unique film_id value in the dvd_rentals.inventory table. WHAT INVENTORY EXIST IN STORE!!!
 - SELECT
   film_id,
   COUNT(DISTINCT inventory_id) 
