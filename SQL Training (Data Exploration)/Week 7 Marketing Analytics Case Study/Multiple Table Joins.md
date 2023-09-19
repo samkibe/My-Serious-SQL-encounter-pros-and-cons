@@ -86,7 +86,8 @@ SELECT
 FROM cte_counts
 GROUP BY unique_record_counts
 ORDER BY unique_record_counts desc;
-#### LEFT join 
+
+#### LEFT join recommened plus inner|  usually we chech which is the BASE table and which isd the TARGET table observe below 
 - -- how many foreign keys only exist in the left table and not in the right?
 - SELECT
   COUNT(DISTINCT rental.inventory_id)
@@ -94,6 +95,18 @@ FROM dvd_rentals.rental
 WHERE NOT EXISTS (
   SELECT inventory_id
   FROM dvd_rentals.inventory
+  WHERE rental.inventory_id = inventory.inventory_id
+
+);
+#### right join dont use 
+-- how many foreign keys only exist in the right table and not in the left?
+-- note the table reference changes
+SELECT
+  COUNT(DISTINCT inventory.inventory_id)
+FROM dvd_rentals.inventory
+WHERE NOT EXISTS (
+  SELECT inventory_id
+  FROM dvd_rentals.rental
   WHERE rental.inventory_id = inventory.inventory_id
 );
 
