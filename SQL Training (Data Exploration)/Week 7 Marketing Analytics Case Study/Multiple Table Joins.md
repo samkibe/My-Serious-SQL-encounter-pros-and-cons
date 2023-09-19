@@ -47,3 +47,7 @@ FROM dvd_rentals.rental;
 FROM dvd_rentals.inventory;
 
 ### hypothesis 2 : There will be a multiple records per unique inventory_id in the dvd_rentals.rental table
+- SELECT inventory_id, COUNT (*) AS record_counts
+  FROM dvd_rentals.rental
+  GROUP BY inventory_id
+  ORDER BY record_counts desc;
