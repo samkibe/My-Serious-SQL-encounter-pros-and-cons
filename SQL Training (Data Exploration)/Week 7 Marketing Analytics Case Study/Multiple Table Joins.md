@@ -33,4 +33,9 @@ WHERE customer_id = 130;
 #### Validating Hypotheses with Data
 ###### (OF ITEMS WHICH NEVER SOLD OR OTHERWISE)
 - The number of unique inventory_id records will be equal in both dvd_rentals.rental and dvd_rentals.inventory tables
-
+- SELECT
+  COUNT(DISTINCT inventory_id)
+FROM dvd_rentals.rental;
+- SELECT
+  COUNT(DISTINCT inventory_id)
+FROM dvd_rentals.inventory;
