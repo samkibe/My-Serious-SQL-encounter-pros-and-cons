@@ -31,7 +31,13 @@ FROM dvd_rentals.rental
 WHERE customer_id = 130;
 
 #### Validating Hypotheses with Data
-###### (OF ITEMS WHICH NEVER SOLD OR OTHERWISE)
+###### (OF ITEMS WHICH NEVER SOLD OR OTHERWISE) by using a WHERE NOT EXIST (ANTI JOIN) for our case this dvd never was rented
+- SELECT * FROM dvd_rentals.inventory
+WHERE NOT EXISTS (
+  SELECT 1 -- THIS SUBQUERY DOESNT RETURN ANYTHING
+  FROM dvd_rentals.rental
+  WHERE inventory.inventory_id = rental.inventory_id
+
 - The number of unique inventory_id records will be equal in both dvd_rentals.rental and dvd_rentals.inventory tables
 - SELECT
   COUNT(DISTINCT inventory_id)
