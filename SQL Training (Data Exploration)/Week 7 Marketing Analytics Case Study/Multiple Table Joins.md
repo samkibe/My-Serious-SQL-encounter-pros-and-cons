@@ -86,4 +86,14 @@ SELECT
 FROM cte_counts
 GROUP BY unique_record_counts
 ORDER BY unique_record_counts desc;
+#### LEFT join 
+- -- how many foreign keys only exist in the left table and not in the right?
+- SELECT
+  COUNT(DISTINCT rental.inventory_id)
+FROM dvd_rentals.rental
+WHERE NOT EXISTS (
+  SELECT inventory_id
+  FROM dvd_rentals.inventory
+  WHERE rental.inventory_id = inventory.inventory_id
+);
 
