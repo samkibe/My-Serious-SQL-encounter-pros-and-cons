@@ -44,7 +44,7 @@
 -- Window functions
 -- ORDER BY
 -- LIMIT
-OR 
+### OR 
 -- FROM
 -- WHERE filters
 -- ON table join conditions
