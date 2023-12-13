@@ -1,4 +1,5 @@
-- CALCULATION(SUM,MAX,AVG, AGGREGATE FUNCTION(inputs, nos, )
+#### WINDOW function algorithm
+- CALCULATION (SUM,MAX,AVG, AGGREGATE FUNCTION(inputs, nos, )
 - OVER -Window frame- (
 - PARTIOTION BY
 - ORDER BY
