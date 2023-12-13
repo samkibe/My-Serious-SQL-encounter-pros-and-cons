@@ -9,5 +9,10 @@
 
 
 - Difference between GROUP BY and PARTITION BY in the context of window function.
+- Quesdtions answered what is an aggregate GROUP BY function and a WINDOW FUNCTION
 - ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/8676cdcf-0518-4464-a081-df15144f10e8)
+
+-  Partition By 2 Columns
+-  ![Uploading image.png…]()
+
 
