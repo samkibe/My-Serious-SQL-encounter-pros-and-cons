@@ -61,15 +61,12 @@
 
 - ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/59d39edc-dd0e-4c70-869c-08e5efe1a3e4)
 
-- The most popular ordered window function calculations are the following - note that all of them do not need any inputs:
-
+#### The most popular ordered window function calculations are the following - note that all of them do not need any inputs:
 These functions return integers:
-
-ROW_NUMBER()
-RANK()
-DENSE_RANK()
-These following functions return numeric outputs between 0 and 1:
-
-PERCENT_RANK()
-CUME_DIST()
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+#### These following functions return numeric outputs between 0 and 1:
+- PERCENT_RANK()
+- CUME_DIST()
 
