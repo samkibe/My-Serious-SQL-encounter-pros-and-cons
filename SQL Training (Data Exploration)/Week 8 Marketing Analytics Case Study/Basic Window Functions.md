@@ -1,7 +1,7 @@
 #### WINDOW function algorithm
 - CALCULATION (SUM,MAX,AVG, AGGREGATE FUNCTION(inputs, nos, )
 - OVER -Window frame- (
-- PARTIOTION BY
+- PARTIOTION BY -- outputs one record per row / % of total frequences
 - ORDER BY
 - FRAME CLAUSE
 - )
