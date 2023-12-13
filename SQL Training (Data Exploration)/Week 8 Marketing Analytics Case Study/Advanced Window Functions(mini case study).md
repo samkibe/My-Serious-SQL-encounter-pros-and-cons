@@ -79,6 +79,21 @@ SOLUTION
 -- GROUP BY 1,2
 -- ORDER BY 1,2;
 
+### OR CUMULATIVE SUM AS BELOW
+-- WITH volume_data AS (
+--  SELECT
+--    market_date,
+--    volume
+-- FROM updated_daily_btc
+--  ORDER BY market_date
+-- LIMIT 10
+-- )
+-- SELECT
+-- market_date,
+--  volume,
+--  SUM(volume) OVER (ORDER BY market_date) AS cumulative_sum
+-- FROM volume_data;
+
 
 #### What is the earliest and latest market_date values?
 #### What was the historic all-time high and low values for the close_price and their dates?
