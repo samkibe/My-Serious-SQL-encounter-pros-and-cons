@@ -56,3 +56,5 @@
 -- Window functions
 -- ORDER BY
 -- LIMIT
+### Ordered Window Functions
+-  ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/b0c433eb-807a-4ed4-8127-62c67fa2ca92)
