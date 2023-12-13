@@ -22,6 +22,8 @@
 - Multiple calculation window functions eg sum, avg, rank, dense rank, max et cetera
 - ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/20da3c4c-7ab7-4a5c-861a-47063ef43211)
 
-
-
+- Blank/ Empty or Missing Partition By question like -- what is the sum of sales per custo mer and their % of total sales? (per customer)
+- 1st function - Sum (sales) over/ partition by customer_id -- AS customer sales
+- 2nd function Sum(sales) over (empty) AS TOTALS SALES
+- to calculate the % per customer we divide the output of 1st function by the output of the second function
 
