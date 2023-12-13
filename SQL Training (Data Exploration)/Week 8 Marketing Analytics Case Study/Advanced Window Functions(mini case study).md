@@ -61,7 +61,23 @@ SOLUTION
 
 ### So if we wanted to perform a cumulative sum calculation, adding the previous volume amounts to a running total OF OUR DATASET  - WE USE a single CTE volume_data with our first 10 rows of volume data.
 
-
+-- WITH volume_data AS (
+--  SELECT
+--   market_date
+-- volume
+--  FROM updated_daily_btc
+--  ORDER BY market_date
+--  LIMIT 10
+-- )
+-- SELECT
+--   t1.market_date,
+--   t1.volume,
+--   SUM(t2.volume) AS running_total
+-- FROM volume_data t1
+-- INNER JOIN volume_data t2
+-- ON t1.market_date >= t2.market_date
+-- GROUP BY 1,2
+-- ORDER BY 1,2;
 
 
 #### What is the earliest and latest market_date values?
