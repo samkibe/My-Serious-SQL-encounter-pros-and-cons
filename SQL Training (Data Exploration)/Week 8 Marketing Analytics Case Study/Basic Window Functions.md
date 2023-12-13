@@ -33,13 +33,25 @@
   
 ### SQL ORDER OF OPERATION / SQL Logical Execution Order
 
-- In a nutshell - all SQL queries are “ran” in the following order:
+- In a nutshell - all SQL queries are “ran” in the following order: VERY IMPOPRTANT, IT HAS BEEN DISCUSSED WIDELY IN THE WEEK 8 TUTORIAL
 
 -- FROM
 -- WHERE filters
 -- ON table join conditions
 -- GROUP BY
 -- SELECT aggregate function calculations
+-- HAVING
+-- Window functions
+-- ORDER BY
+-- LIMIT
+OR 
+-- FROM
+-- WHERE filters
+-- ON table join conditions
+-- GROUP BY
+-- SELECT statements
+---- Derived column expressions
+---- Aggregate functions
 -- HAVING
 -- Window functions
 -- ORDER BY
