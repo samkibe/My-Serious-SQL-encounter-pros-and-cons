@@ -58,3 +58,8 @@
 -- LIMIT
 ### Ordered Window Functions
 -  ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/b0c433eb-807a-4ed4-8127-62c67fa2ca92)
+
+- ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/59d39edc-dd0e-4c70-869c-08e5efe1a3e4)
+
+- 
+
