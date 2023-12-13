@@ -3,6 +3,12 @@
 - cumulative window functions
 
 ### problem #1 Missing Data --  Identify Null Rows
+-- SELECT *
+-- FROM trading.daily_btc
+-- WHERE (
+--  open_price + high_price + low_price +
+--  close_price + adjusted_close_price + volume
+-- ) IS NULL;
 
 #### What is the earliest and latest market_date values?
 #### What was the historic all-time high and low values for the close_price and their dates?
