@@ -18,9 +18,10 @@
 
 -  Multiple Level Partition By
 - ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/78399f31-1cc6-4471-a002-1759fc97b694)
+  
+- Multiple calculation window functions eg sum, avg, rank, dense rank, max et cetera
+- ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/20da3c4c-7ab7-4a5c-861a-47063ef43211)
 
-
-- 
 
 
 
