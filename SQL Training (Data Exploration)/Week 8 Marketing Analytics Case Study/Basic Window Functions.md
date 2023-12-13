@@ -13,6 +13,10 @@
 - ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/8676cdcf-0518-4464-a081-df15144f10e8)
 
 -  Partition By 2 Columns
--  ![Uploading image.png…]()
+-  ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/fb82d9ad-c5fd-4e78-b0ad-6e139c7be0a6)
+  
+-  Multiple Level Partition By
+- ![Uploading image.png…]()
+
 
 
