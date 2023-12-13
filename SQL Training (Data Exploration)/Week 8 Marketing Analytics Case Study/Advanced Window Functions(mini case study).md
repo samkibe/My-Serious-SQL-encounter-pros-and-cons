@@ -2,7 +2,7 @@
 - lag and lead functions 
 - cumulative window functions
 
-- problem #1 Missing Data --  Identify Null Rows
+### problem #1 Missing Data --  Identify Null Rows
 
 #### What is the earliest and latest market_date values?
 #### What was the historic all-time high and low values for the close_price and their dates?
