@@ -28,7 +28,18 @@
 - to calculate the % per customer we divide the output of 1st function by the output of the second function
 - sample code
 - SELECT measure, COUNT(*) AS frequency ROUND (100 * COUNT(*) SUM(COUNT(*)) OVER (),  2  ) AS percentage
-- FROM health.user_logs
-GROUP BY measure
-ORDER BY frequency DESC
+- FROM health.user_logs GROUP BY measure ORDER BY frequency DESC
+- select customer_id sum(sale) over () from customer_sales group by customer_id
+### SQL ORDER OF OPERATION / SQL Logical Execution Order
 
+- In a nutshell - all SQL queries are “ran” in the following order:
+
+-- FROM
+-- WHERE filters
+-- ON table join conditions
+-- GROUP BY
+-- SELECT aggregate function calculations
+-- HAVING
+-- Window functions
+-- ORDER BY
+-- LIMIT
