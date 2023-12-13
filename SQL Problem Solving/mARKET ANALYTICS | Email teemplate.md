@@ -19,3 +19,12 @@
 - INNER JOIN dvd_rentals.category
 -  ON film_category.category_id = category.category_id;
 - SELECT * FROM complete_joint_dataset limit 10;
+
+## Core Calculated Fields
+### 1 category_name: The name of the top 2 ranking categories
+### 2 rental_count: How many total films have they watched in this category
+### 3 average_comparison: How many more films has the customer watched compared to the average DVD Rental Co customer
+### 4 percentile: How does the customer rank in terms of the top X% compared to all other customers in this film category?
+### 5 category_percentage: What proportion of total films watched does this category make up?
+  
+- 
