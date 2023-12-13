@@ -26,4 +26,9 @@
 - 1st function - Sum (sales) over/ partition by customer_id -- AS customer sales
 - 2nd function Sum(sales) over (empty) AS TOTALS SALES
 - to calculate the % per customer we divide the output of 1st function by the output of the second function
+- sample code
+- SELECT measure, COUNT(*) AS frequency ROUND (100 * COUNT(*) SUM(COUNT(*)) OVER (),  2  ) AS percentage
+- FROM health.user_logs
+GROUP BY measure
+ORDER BY frequency DESC
 
