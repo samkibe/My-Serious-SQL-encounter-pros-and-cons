@@ -1,1 +1,6 @@
-
+- CALCULATION(SUM,MAX,AVG, AGGREGATE FUNCTION(inputs, nos, )
+- OVER -Window frame- (
+- PARTIOTION BY
+- ORDER BY
+- FRAME CLAUSE
+- )
