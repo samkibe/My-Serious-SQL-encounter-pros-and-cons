@@ -42,4 +42,38 @@
 ### 3 What is the percentage of weeks (starting on a Monday) where there are 4 or more days with increased volume?
 ### 4 How many high volume weeks are there broken down by year for the weeks with 5-7 days above the 7 day volume average excluding 2021?
 
-## solution for part 1 and 2
+## Weekly Volume Comparison (solution for part 1 and 2)
+- WITH window_calculations AS (
+- SELECT
+-  market_date,
+-  volume,
+-  AVG(volume) OVER (
+-    ORDER BY market_date
+-    RANGE BETWEEN '7 DAYS' PRECEDING and '1 DAY' PRECEDING
+-  ) AS past_weekly_avg_volume
+- FROM updated_daily_btc
+- )
+- SELECT
+-  market_date,
+-  volume,
+-  CASE
+-    WHEN volume > past_weekly_avg_volume THEN 1
+-    ELSE 0
+-   END AS volume_flag
+- FROM window_calculations
+- ORDER BY market_date DESC
+- LIMIT 10;
+
+### Simple Moving Averages - check tuitorial quite a huge code
+### Statistical Outlier Detection - check tutorial
+
+### Vizualization of market_date against close_price
+- SELECT
+- market_date,
+- volume,
+- close_price
+- FROM updated_daily_btc
+- ![h](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/f7e93876-fb17-4be0-b839-f18b92c95c40)
+
+
+
