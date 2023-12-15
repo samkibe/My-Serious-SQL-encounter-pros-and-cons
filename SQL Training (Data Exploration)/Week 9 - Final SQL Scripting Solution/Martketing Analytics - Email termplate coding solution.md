@@ -1,4 +1,4 @@
-## Marketing Analytics || Email tmplate
+## Marketing Analytics || Email template
 ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/ff6dedfd-bac8-4ab1-b213-1c52b271a1b6)
 
 ![image](https://github.com/samkibe/My-Serious-SQL-encounter-pros-and-cons/assets/25104443/b091b1f4-b9c1-4a27-8199-17a8c3051204)
